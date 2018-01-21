@@ -1,0 +1,63 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.season, .link-list li {
+    list-style: none;
+}
+
+a {
+    color: #3541F5;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3541F5;
+    text-decoration: line-through;
+}
+
+.selected-link {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.nav {
+    text-align: right;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.year {
+    color: #d3d3d3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.liner-notes {
+    margin-bottom: 40px;
+}
+
+.track-list {
+    font-weight: 700;
+}
+
+ol {
+    margin-bottom: 40px;
+}
