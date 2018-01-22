@@ -1,6 +1,7 @@
 body {
     font-family: 'Inconsolata', monospace;
     font-size: 18px;
+    line-height: 1.2;
 }
 
 .container {
@@ -30,17 +31,26 @@ a:hover {
     text-decoration: line-through;
 }
 
-.selected-link {
+.selected-link span a {
+    background-color: #3541F5;
+    color: #fff;
     font-weight: 700;
-    text-decoration: underline;
+    padding: 0 8px 0 8px;
+    text-decoration: none;
 }
 
 .nav {
-    text-align: right;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    height: 90vh;
+    top: 15px;    
+    /*text-align: right;*/
 }
 
 .description {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .year {
@@ -51,13 +61,10 @@ a:hover {
 }
 
 .liner-notes {
-    margin-bottom: 40px;
-}
-
-.track-list {
-    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 ol {
-    margin-bottom: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
 }
