@@ -20,6 +20,10 @@ h1 {
     list-style: none;
 }
 
+.link-list li a {
+    margin-right: 2px;
+}
+
 a {
     color: #3541F5;
     font-size: 18px;
@@ -65,6 +69,13 @@ a:hover {
 }
 
 ol {
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 30px;
+}
+
+.footnotes {
+    color: #999;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: -20px;
 }
