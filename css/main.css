@@ -31,17 +31,6 @@ h1 {
     margin-bottom: 15px;
 }
 
-a {
-    color: #ef6eae;
-    font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-a:hover {
-    background-color: #fff;
-}
-
 .selected-link span a {
     color: #ef6eae;
     text-decoration: underline;
@@ -88,8 +77,17 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.season {
+    margin-bottom: 5px;
+}
+
 .season a {
     color: #ef6eae;
+    text-decoration: none;
+}
+
+.season a:hover {
+    color: #fff;
 }
 
 .liner-notes {
