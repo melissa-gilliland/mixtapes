@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mixtapes</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800,800i" rel="stylesheet"> 
+</head>
+    <body>
+        <section class="wrapper">
+
+          <section class="material-design-hamburger">
+            <button class="material-design-hamburger__icon">
+              <span class="material-design-hamburger__layer"></span>
+            </button>
+          </section>
+
+          <section class="menu menu--off">
+            <div class="description">a sentimental, self-indulgent archive of personal playlists</div>
+                    <div class="year-wrapper">
+                        <div class="year">2017</div>
+                        <ul>
+                            <li class="season">
+                                <span><a href="spring2017.html">spring</a></span>
+                            </li>
+                            <li class="season">
+                                <span><a href="fall2017.html">fall</a></span>
+                            </li>
+                        </ul>
+                        <div class="year">2018</div>
+                        <ul>
+                            <li class="season selected-link">
+                                <span><a href="winter2018.html">winter</a></span></li>
+                        </ul>
+                    </div>
+          </section>
+
+        </section>
+        <script>
+            (function() {
+
+  'use strict';
+
+  document.querySelector('.material-design-hamburger__icon').addEventListener(
+    'click',
+    function() {      
+      var child;
+      
+      document.body.classList.toggle('background--blur');
+      this.parentNode.nextElementSibling.classList.toggle('menu--on');
+
+      child = this.childNodes[1].classList;
+
+      if (child.contains('material-design-hamburger__icon--to-arrow')) {
+        child.remove('material-design-hamburger__icon--to-arrow');
+        child.add('material-design-hamburger__icon--from-arrow');
+      } else {
+        child.remove('material-design-hamburger__icon--from-arrow');
+        child.add('material-design-hamburger__icon--to-arrow');
+      }
+
+    });
+
+})();
+        </script>
+    </body>
