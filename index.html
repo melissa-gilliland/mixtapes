@@ -10,10 +10,33 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800,800i" rel="stylesheet"> 
 </head>
 <body>
-    <header>
+    <nav id="menu">
+        <header>
+            <div class="description">a sentimental, self-indulgent archive of personal playlists</div>
+            <div class="year-wrapper">
+                <div class="year">2017</div>
+                <ul>
+                    <li class="season">
+                        <span><a href="spring2017.html">spring</a></span>
+                    </li>
+                    <li class="season">
+                        <span><a href="fall2017.html">fall</a></span>
+                    </li>
+                </ul>
+                <div class="year">2018</div>
+                <ul>
+                    <li class="season selected-link">
+                        <span><a href="winter2018.html">winter</a></span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </nav>
+    <main id="panel">
         <div class="container">
             <div class="row list-and-nav">
                 <div class="three columns nav">
+                    <button class="btn-hamburger js-slideout-toggle"></button>
                     <div class="description">a sentimental, self-indulgent archive of personal playlists</div>
                     <div class="year-wrapper">
                         <div class="year">2017</div>
@@ -31,7 +54,7 @@
                                 <span><a href="winter2018.html">winter</a></span></li>
                         </ul>
                     </div>
-                </div>
+                </div>    
                 <div class="nine columns">
                     <!--<img src="img/winter.jpg" class="album-art">-->
                     <h1>Winter 2018</h1>
@@ -59,5 +82,18 @@
                 </div>
             </div>
         </div>
-    </header>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+        
+        document.querySelector('.toggle-button').addEventListener('click', function() {
+  slideout.toggle();
+});
+    </script>
 </body>
