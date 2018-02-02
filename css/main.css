@@ -3,24 +3,30 @@ body {
     color: #fff;
     font-family: 'Inconsolata', sans-serif;
     font-weight: 400;
+    font-size: 16px;
 }
 
 /*  playlist header */
 
 .playlist-header {
     align-items: center;
+    align-content: center;
     border-radius: 1px;
     display: flex;
     padding: 20px;
     justify-content: space-between;
-    margin-bottom: 20px;
+}
+
+.year-season-group {
+    display: flex;
+    align-items: center;
 }
 
 .year {
+    color: #585879;
     font-size: 16px;
     font-weight: 400;
-    margin-right: 10px;
-    width: 60px;
+    margin-right: 20px;
 }
 
 .season {
@@ -41,6 +47,21 @@ body {
     color: #fff;
 }
 
+/* playlist header hover */
+
+.playlist-header:hover {
+    background-color: #0cb990;
+    cursor: pointer;
+}
+
+.playlist-header:hover .year {
+    color: #afded3;
+}
+
+.playlist-header:hover .social-i {
+    color: #afded3;
+}
+
 /* selected playlist */
 
 .selected-playlist {
@@ -59,14 +80,28 @@ body {
     color: #fff;
 }
 
-/* playlist content */
+/* selected playlist hover */
 
-.playlist-content {
-    color: #dcdcf3;
-    margin-left: 70px;
+.selected-playlist .social-i:hover {
+    color: #fff;
 }
 
+/* playlist content */
 
+.playlist-outer {
+    border-bottom: 1px solid #414162;
+}
+
+.playlist-inner {
+    color: #dcdcf3;
+    margin: 20px auto auto 70px;
+}
+
+/* hidden playlist content */
+
+.hidden-playlist {
+    display: none;
+}
 
 .container {
     margin: 50px auto;
