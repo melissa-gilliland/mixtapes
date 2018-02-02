@@ -6,6 +6,67 @@ body {
     font-size: 16px;
 }
 
+.container {
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav */
+
+nav {
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+.nav-link {
+    color: #585879;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* modal */
+
+.modal {
+    background-color: rgba(0,0,0,.7);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #27273d;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+}
+
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /*  playlist header */
 
 .playlist-header {
@@ -101,11 +162,6 @@ body {
 
 .hidden-playlist {
     display: none;
-}
-
-.container {
-    margin: 50px auto;
-    max-width: 700px;
 }
 
 h1 {
