@@ -1,13 +1,76 @@
 body {
-    color: #C8CBD9;
-    background-color: #17181C;
-    font-family: 'Inconsolata', monospace;
-    font-size: 16px;
-    line-height: 1.2;
+    background-color: #27273d;
+    color: #fff;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 400;
 }
 
+/*  playlist header */
+
+.playlist-header {
+    align-items: center;
+    border-radius: 1px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.year {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+    width: 60px;
+}
+
+.season {
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.social-i {
+    color: #585879;
+    font-size: 20px;
+    margin: auto 5px;
+}
+
+.social-i:hover {
+    color: #fff;
+}
+
+/* selected playlist */
+
+.selected-playlist {
+    background-color: #0cb990;
+}
+
+.selected-playlist .year {
+    color: #afded3;
+}
+
+.selected-playlist .social-i {
+    color: #afded3;
+}
+
+.selected-playlist .social-i:hover {
+    color: #fff;
+}
+
+/* playlist content */
+
+.playlist-content {
+    color: #dcdcf3;
+    margin-left: 70px;
+}
+
+
+
 .container {
-    margin-top: 50px;
+    margin: 50px auto;
+    max-width: 700px;
 }
 
 h1 {
@@ -69,12 +132,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.year {
-    color: #4F5159;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
 
 .season {
     margin-bottom: 5px;
