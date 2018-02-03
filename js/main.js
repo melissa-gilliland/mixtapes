@@ -17,4 +17,7 @@ function openModal() {
     modal.style.display = 'block';
 }
 
-// function 
+// function to close modal
+function closeModal() {
+    modal.style.display = 'none';
+}
