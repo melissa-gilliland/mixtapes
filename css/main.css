@@ -50,19 +50,38 @@ nav {
 
 .modal-content {
     background-color: #27273d;
-    margin: 20% auto;
-    padding: 20px;
-    width: 70%;
+    border-radius: 5px;
+    margin: 10% auto;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+    max-width: 760px;
 }
 
-.closeBtn {
-    color: #ccc;
+.modal-p:first-of-type {
+    top: 10px;
+}
+
+.modal-link {
+    color: #0cb990;
+}
+
+.modal-link:hover {
+    color: #fff;
+}
+
+#closeBtn {
+    color: #585879;
+    font-size: 22px;
     float: right;
-    font-size: 30px;
+    margin-top: -8px;
+    margin-right: -14px;
 }
 
-.closeBtn:hover, .closeBtn:focus {
-    color: #000;
+#closeBtn:hover, #closeBtn:focus {
+    color: #fff;
     cursor: pointer;
     text-decoration: none;
 }
