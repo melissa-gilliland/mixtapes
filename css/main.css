@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    margin: 30px auto;
+    margin: 0 auto;
     max-width: 700px;
 }
 
@@ -18,12 +18,20 @@ a {
 /* nav */
 
 nav {
+    background-color: #27273d;
     font-family: 'Karla', sans-serif;
     font-size: 22px;
     font-weight: 700;
+    height: 40px;
     margin-bottom: 20px;
+    padding-top: 20px;
+    position: -webkit-sticky;
+    position: sticky;
     text-align: right;
     text-transform: lowercase;
+    top: 0;
+    z-index: 2;
+    
 }
 
 .nav-link {
@@ -58,6 +66,7 @@ nav {
     padding: 20px 30px 20px 30px;
     text-align: left;
     max-width: 760px;
+    text-transform: none;
 }
 
 .modal-p:first-of-type {
