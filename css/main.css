@@ -97,7 +97,7 @@ nav {
 
 /*  playlist header */
 
-.playlist-header {
+.unselected-playlist {
     align-items: center;
     align-content: center;
     border-radius: 1px;
@@ -155,7 +155,13 @@ nav {
 /* selected playlist */
 
 .selected-playlist {
+    align-items: center;
+    align-content: center;
     background-color: #0cb990;
+    border-radius: 1px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 .selected-playlist .year {

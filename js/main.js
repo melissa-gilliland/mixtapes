@@ -24,6 +24,16 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
+// SELECTED STYLES
+
+function toggleClass(el) {
+    if(el.className == "unselected-playlist") {
+        el.className = "selected-playlist";
+    } else {
+        el.className = "unselected-playlist";
+    }
+}
+
 // ACCORDION STUFF 
 
 // grab all accordions, which gives us an array
@@ -52,12 +62,5 @@ for (var i = 0; i < accordions.length; i++) {
             content.style.maxHeight = content.scrollHeight + 'px';
             // gets the total value of everything inside of it
         }
-        
     }
 }
-
-document.querySelector('.playlist-header').addEventListener('click', function(e) {
-    [].map.call(document.querySelectorAll('.playlist-header'), function(el) {
-        el.classList.toggle('selected-playlist');
-    });
-});
