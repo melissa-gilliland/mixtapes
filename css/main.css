@@ -36,6 +36,7 @@ nav {
 
 .nav-link {
     color: #585879;
+    margin-right: 24px;
 }
 
 .nav-link:hover {
@@ -101,7 +102,9 @@ nav {
     align-items: center;
     align-content: center;
     border-radius: 1px;
+    border-bottom: 1px solid #414162;
     display: flex;
+    margin-top: -20px;
     padding: 20px;
     justify-content: space-between;
 }
@@ -138,7 +141,7 @@ nav {
 
 /* playlist header hover */
 
-.playlist-header:hover {
+.unselected-playlist:hover, selected-playlist:hover {
     background-color: #0cb990;
     cursor: pointer;
     transition: background-color 0.2s linear;
@@ -160,8 +163,13 @@ nav {
     background-color: #0cb990;
     border-radius: 1px;
     display: flex;
+    margin-top: -20px;
     padding: 20px;
     justify-content: space-between;
+}
+
+.selected-playlist:hover {
+    cursor: pointer;
 }
 
 .selected-playlist .year {
@@ -183,10 +191,6 @@ nav {
 }
 
 /* playlist content */
-
-.playlist-wrapper {
-    border-bottom: 1px solid #414162;
-}
 
 .playlist {
     color: #dcdcf3;
