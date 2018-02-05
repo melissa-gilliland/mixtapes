@@ -55,3 +55,9 @@ for (var i = 0; i < accordions.length; i++) {
         
     }
 }
+
+document.querySelector('.playlist-header').addEventListener('click', function(e) {
+    [].map.call(document.querySelectorAll('.playlist-header'), function(el) {
+        el.classList.toggle('selected-playlist');
+    });
+});
