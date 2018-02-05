@@ -200,78 +200,6 @@ nav {
     transition: max-height 0.2s ease-in-out;
 }
 
-/* hidden playlist content */
-
-.hidden-playlist {
-    display: none;
-}
-
-h1 {
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.season, .link-list li {
-    list-style: none;
-    margin-bottom: 15px;
-}
-
-.selected-link span a {
-    color: #ef6eae;
-    text-decoration: underline;
-}
-
-.button-link {
-    color: #ef6eae;
-    border: 1px solid #ef6eae;
-    font-size: 14px;
-    margin-bottom: 10px;
-    margin-right: 2px;
-    padding: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.button-link:hover {
-    background-color: #ef6eae;
-    color: #fff;
-    text-decoration: none;
-}
-
-.list-and-nav {
-    width: 100%;
-}
-
-.nav {
-    top: 50px;
-    position: sticky;
-    z-index: 99;
-    overflow: auto;
-    height: 90vh;;    
-}
-
-.description {
-    margin-bottom: 20px;
-}
-
-
-.season {
-    margin-bottom: 5px;
-}
-
-.season a {
-    color: #ef6eae;
-    text-decoration: none;
-}
-
-.season a:hover {
-    color: #fff;
-}
-
 .liner-notes {
     margin-bottom: 25px;
     max-width: 600px;
@@ -280,12 +208,5 @@ h1 {
 ol {
     line-height: 1;
     margin-bottom: 30px;
-}
-
-.footnotes {
-    color: #999;
-    font-size: 13px;
-    font-style: italic;
-    margin-top: -20px;
 }
 
