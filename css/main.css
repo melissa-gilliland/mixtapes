@@ -210,3 +210,16 @@ ol {
     margin-bottom: 30px;
 }
 
+/* media queries */
+
+@media (max-width: 750px) {
+    
+    .playlist {
+        margin: 20px 20px auto 20px;
+    }
+    
+    .modal-content {
+        margin: 10%;
+    }
+    
+}
