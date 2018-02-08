@@ -19,12 +19,15 @@ a {
 
 nav {
     background-color: #27273d;
+    display: flex;
+    align-items: center;
     font-family: 'Karla', sans-serif;
     font-size: 22px;
     font-weight: 700;
     height: 40px;
+    justify-content: space-between;
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px 0;
     position: -webkit-sticky;
     position: sticky;
     text-align: right;
@@ -32,6 +35,16 @@ nav {
     top: 0;
     z-index: 2;
     
+}
+
+.about-text {
+    color: #585879;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 24px;
+    max-width: 400px;
+    text-align: left;
 }
 
 .nav-link {
@@ -66,7 +79,7 @@ nav {
     font-size: 18px;
     padding: 20px 30px 20px 30px;
     text-align: left;
-    max-width: 760px;
+    max-width: 600px;
     text-transform: none;
 }
 
