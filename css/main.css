@@ -161,6 +161,10 @@ nav {
     transition: background-color 0.2s linear;
 }
 
+.unselected-playlist:hover a:hover {
+    color: #fff;
+}
+
 .playlist-header:hover .year {
     color: #afded3;
 }
@@ -194,7 +198,7 @@ nav {
     color: #afded3;
 }
 
-.selected-playlist .social-i:hover {
+.selected-playlist:hover .social-i:hover {
     color: #fff;
 }
 
@@ -206,6 +210,10 @@ nav {
 
 /* playlist content */
 
+.track-list {
+    margin-top: 14px;
+}
+
 .playlist {
     color: #dcdcf3;
     margin: 20px auto auto 70px;
@@ -215,7 +223,8 @@ nav {
 }
 
 .liner-notes {
-    margin-bottom: 25px;
+    font-style: italic;
+    margin-top: -4px;
     max-width: 600px;
 }
 
