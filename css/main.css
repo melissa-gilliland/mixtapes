@@ -224,7 +224,6 @@ nav {
 
 .liner-notes {
     font-style: italic;
-    margin-top: -4px;
     max-width: 600px;
 }
 
@@ -251,10 +250,6 @@ ol {
     
     .modal-content {
         margin: 10%;
-    }
-    
-    ol {
-        margin-left: -15px;
     }
     
     ol li {
