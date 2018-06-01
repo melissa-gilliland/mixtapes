@@ -59,7 +59,7 @@ for (var i = 0; i < accordions.length; i++) {
             // accordion is closed, we need to take
             // that max-height of 0 and make it as large
             // as it needs to be
-            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.maxHeight = '1000px';
             // gets the total value of everything inside of it
         }
     }
